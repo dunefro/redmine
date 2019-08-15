@@ -1,0 +1,14 @@
+---
+# tasks file for redmine
+
+- docker_image:
+    dockerfile: Dockerfile
+    name: redmine
+    tag: v1
+    state: present
+- docker_container:
+    name: red
+    interactive: true
+    tty: true
+    detach: true
+    image: redmine:v1

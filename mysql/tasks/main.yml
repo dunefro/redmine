@@ -1,0 +1,9 @@
+---
+# tasks file for mysql
+#
+- docker_container:
+    name: mysql_dock
+    interactive: true
+    tty: true
+    detach: true
+    image: dunefro/myownmysql:v1
